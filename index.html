@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diabetic Foot Ulcer Treatment – Lakeway Wound Care for Feet</title>
+  <meta name="description" content="Comprehensive diabetic foot care services. Expert podiatrists provide preventive care, wound treatment, and foot health management for diabetic patients.">
+  <link rel="canonical" href="https://<your-cloud-page-url>" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      line-height: 1.6;
+      color: #333;
+      overflow-x: hidden;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* Header */
+    header {
+      background: #7c3aed;
+      color: white;
+      padding: 1rem 0;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+    }
+
+    .header-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo h1 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.3rem;
+      font-weight: 500;
+      color: #e5e7eb;
+      margin: 0;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(rgba(124, 58, 237, 0.95), rgba(124, 58, 237, 0.95)), 
+                  linear-gradient(45deg, #7c3aed, #dc2626);
+      color: white;
+      padding: 120px 0 80px;
+      text-align: center;
+      position: relative;
+    }
+
+    .hero h1 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 3.5rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    }
+
+    .hero .subtitle {
+      font-size: 1.5rem;
+      margin-bottom: 30px;
+      opacity: 0.95;
+    }
+
+    .hero .description {
+      font-size: 1.1rem;
+      margin-bottom: 40px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .hero-image-inline {
+      margin: 40px auto;
+      max-width: 500px;
+    }
+
+    .hero-image-inline img {
+      width: 100%;
+      height: auto;
+      border-radius: 15px;
+      box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+    }
+
+    .cta-buttons {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 15px 30px;
+      border: none;
+      border-radius: 50px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .btn-primary {
+      background: #dc2626;
+      color: #FFFFFF;
+      box-shadow: 0 4px 15px rgba(220, 38, 38, 0.4);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      background: #b91c1c;
+      box-shadow: 0 6px 20px rgba(220, 38, 38, 0.6);
+    }
+
+    .btn-secondary {
+      background: transparent;
+      color: white;
+      border: 2px solid white;
+    }
+
+    .btn-secondary:hover {
+      background: white;
+      color: #7c3aed;
+    }
+
+    /* Trust Indicators */
+    .trust-section {
+      background: white;
+      padding: 40px 0;
+      border-bottom: 1px solid #e5e7eb;
+    }
+
+    .trust-indicators {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 30px;
+      text-align: center;
+    }
+
+    .trust-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .trust-item i {
+      font-size: 2.5rem;
+      color: #7c3aed;
+    }
+
+    .trust-item h3 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #7c3aed;
+    }
+
+    .trust-item p {
+      font-size: 0.9rem;
+      color: #6b7280;
+    }
+
+    /* Content Section */
+    .content-section {
+      padding: 80px 0;
+      background: white;
+    }
+
+    .content-section:nth-child(even) {
+      background: #f8fafc;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .section-title h2 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #7c3aed;
+      margin-bottom: 15px;
+    }
+
+    .section-title p {
+      font-size: 1.1rem;
+      color: #6b7280;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .content-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .content-card {
+      background: white;
+      padding: 40px 30px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      text-align: left;
+      transition: all 0.3s ease;
+    }
+
+    .content-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    }
+
+    .content-card h3 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: #7c3aed;
+      margin-bottom: 15px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .content-card i {
+      color: #dc2626;
+      font-size: 1.5rem;
+    }
+
+    .content-card p {
+      color: #6b7280;
+      margin-bottom: 15px;
+    }
+
+    .content-card ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .content-card li {
+      color: #6b7280;
+      margin-bottom: 8px;
+      padding-left: 20px;
+      position: relative;
+    }
+
+    .content-card li:before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #dc2626;
+      font-weight: bold;
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 40px;
+      margin-top: 60px;
+    }
+
+    .feature-item {
+      text-align: center;
+    }
+
+    .feature-icon {
+      width: 80px;
+      height: 80px;
+      background: #7c3aed;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 20px;
+    }
+
+    .feature-icon i {
+      font-size: 2rem;
+      color: white;
+    }
+
+    .feature-item h3 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: #7c3aed;
+      margin-bottom: 15px;
+    }
+
+    .feature-item p {
+      color: #6b7280;
+    }
+
+    /* Emergency Section */
+    .emergency {
+      background: #dc2626;
+      color: white;
+      padding: 60px 0;
+      text-align: center;
+    }
+
+    .emergency h2 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .emergency p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+
+    .emergency-phone {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+      text-decoration: none;
+      color: white;
+      display: inline-flex;
+      align-items: center;
+      gap: 15px;
+      padding: 20px 40px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 50px;
+      transition: all 0.3s ease;
+      border: 2px solid rgba(255, 255, 255, 0.3);
+    }
+
+    .emergency-phone:hover {
+      background: #7c3aed;
+      transform: scale(1.05);
+      border-color: white;
+    }
+
+    /* Footer */
+    footer {
+      background: #7c3aed;
+      color: white;
+      padding: 60px 0 30px;
+    }
+
+    .footer-content {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 40px;
+    }
+
+    .footer-section h3 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #FFFFFF;
+      margin-bottom: 20px;
+    }
+
+    .footer-section p, .footer-section li {
+      color: #d1d5db;
+      margin-bottom: 10px;
+    }
+
+    .footer-section ul {
+      list-style: none;
+    }
+
+    .footer-section a {
+      color: #d1d5db;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .footer-section a:hover {
+      color: #fbbf24;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid #8b5cf6;
+      margin-top: 40px;
+      padding-top: 20px;
+      text-align: center;
+      color: #9ca3af;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+
+      .hero .subtitle {
+        font-size: 1.2rem;
+      }
+
+      .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .emergency-phone {
+        font-size: 1.5rem;
+        padding: 15px 30px;
+      }
+
+      .content-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .features-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">
+          <h1>Lakeway Diabetic Foot Ulcer Treatment</h1>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1>Diabetic Foot Care</h1>
+      <p class="subtitle">Specialized Care for Diabetic Patients</p>
+      <p class="description">
+        Expert diabetic foot care services designed to prevent complications, manage existing conditions, and maintain optimal foot health. Our specialized podiatrists understand the unique challenges diabetic patients face and provide comprehensive, preventive care.
+      </p>
+      <div class="hero-image-inline">
+        <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=500&h=300&fit=crop" 
+             alt="Professional diabetic foot examination and care by certified podiatrist" 
+             loading="lazy">
+      </div>
+      <div class="cta-buttons">
+        <a href="https://southtxrelay.github.io/stride-foot-ankle/" class="btn btn-primary">
+          <i class="fas fa-calendar-check"></i>
+          Schedule Care Plan
+        </a>
+        <a href="#services" class="btn btn-secondary">
+          <i class="fas fa-arrow-down"></i>
+          View Services
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust Indicators -->
+  <section class="trust-section">
+    <div class="container">
+      <div class="trust-indicators">
+        <div class="trust-item">
+          <i class="fas fa-user-md"></i>
+          <h3>Diabetes Specialists</h3>
+          <p>Expert diabetic foot care</p>
+        </div>
+        <div class="trust-item">
+          <i class="fas fa-shield-alt"></i>
+          <h3>Prevention Focused</h3>
+          <p>Proactive care approach</p>
+        </div>
+        <div class="trust-item">
+          <i class="fas fa-heart"></i>
+          <h3>Comprehensive Care</h3>
+          <p>Complete foot health management</p>
+        </div>
+        <div class="trust-item">
+          <i class="fas fa-clipboard-check"></i>
+          <h3>Regular Monitoring</h3>
+          <p>Ongoing health assessments</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Diabetic Foot Services -->
+  <section class="content-section" id="services">
+    <div class="container">
+      <div class="section-title">
+        <h2>Comprehensive Diabetic Foot Services</h2>
+        <p>Specialized care programs designed to prevent complications and maintain optimal foot health for diabetic patients</p>
+      </div>
+      <div class="content-grid">
+        <div class="content-card">
+          <h3><i class="fas fa-search"></i> Comprehensive Screening</h3>
+          <p>Thorough foot health assessments to identify potential problems before they become serious complications.</p>
+          <ul>
+            <li>Diabetic foot examination</li>
+            <li>Circulation assessment</li>
+            <li>Nerve function testing</li>
+            <li>Pressure point analysis</li>
+            <li>Skin integrity evaluation</li>
+          </ul>
+        </div>
+        <div class="content-card">
+          <h3><i class="fas fa-band-aid"></i> Wound Care Management</h3>
+          <p>Expert treatment of diabetic foot wounds and ulcers using advanced healing techniques and monitoring.</p>
+          <ul>
+            <li>Advanced wound dressings</li>
+            <li>Infection prevention</li>
+            <li>Healing progress monitoring</li>
+            <li>Offloading techniques</li>
+            <li>Specialized care protocols</li>
+          </ul>
+        </div>
+        <div class="content-card">
+          <h3><i class="fas fa-graduation-cap"></i> Patient Education</h3>
+          <p>Comprehensive education programs to help diabetic patients maintain healthy feet and prevent complications.</p>
+          <ul>
+            <li>Daily foot care routines</li>
+            <li>Proper footwear selection</li>
+            <li>Blood sugar management</li>
+            <li>Warning sign recognition</li>
+            <li>Home monitoring techniques</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Understanding Diabetic Foot Risks -->
+  <section class="content-section">
+    <div class="container">
+      <div class="section-title">
+        <h2>Understanding Diabetic Foot Risks</h2>
+        <p>Learn about the complications diabetes can cause and how proper foot care prevents serious problems</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-item">
+          <div class="feature-icon">
+            <i class="fas fa-eye-slash"></i>
+          </div>
+          <h3>Nerve Damage</h3>
+          <p>Diabetic neuropathy can reduce sensation in feet, making it difficult to detect injuries or pressure points.</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">
+            <i class="fas fa-heartbeat"></i>
+          </div>
+          <h3>Poor Circulation</h3>
+          <p>Reduced blood flow can slow healing and increase infection risk, making foot injuries more serious.</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">
+            <i class="fas fa-virus"></i>
+          </div>
+          <h3>Infection Risk</h3>
+          <p>High blood sugar levels can impair immune function, making diabetics more susceptible to foot infections.</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">
+            <i class="fas fa-exclamation-triangle"></i>
+          </div>
+          <h3>Delayed Healing</h3>
+          <p>Diabetes can significantly slow the healing process, turning minor foot problems into major complications.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Prevention Strategies -->
+  <section class="content-section">
+    <div class="container">
+      <div class="section-title">
+        <h2>Diabetic Foot Prevention</h2>
+        <p>Proactive strategies and professional care to prevent serious diabetic foot complications</p>
+      </div>
+      <div class="content-grid">
+        <div class="content-card">
+          <h3><i class="fas fa-calendar-day"></i> Daily Foot Care</h3>
+          <p>Essential daily routines and practices to maintain healthy feet and prevent complications.</p>
+          <ul>
+            <li>Daily foot inspections</li>
+            <li>Proper washing and drying</li>
+            <li>Moisturizing techniques</li>
+            <li>Nail care guidelines</li>
+            <li>Temperature checking</li>
+          </ul>
+        </div>
+        <div class="content-card">
+          <h3><i class="fas fa-shoe-prints"></i> Proper Footwear</h3>
+          <p>Expert guidance on selecting and fitting appropriate footwear to protect diabetic feet.</p>
+          <ul>
+            <li>Diabetic shoe fitting</li>
+            <li>Custom orthotics</li>
+            <li>Pressure-relieving insoles</li>
+            <li>Breathable materials</li>
+            <li>Protective features</li>
+          </ul>
+        </div>
+        <div class="content-card">
+          <h3><i class="fas fa-chart-line"></i> Blood Sugar Control</h3>
+          <p>Understanding the connection between blood sugar management and foot health outcomes.</p>
+          <ul>
+            <li>Target blood sugar levels</li>
+            <li>Monitoring techniques</li>
+            <li>Diet and exercise impact</li>
+            <li>Medication compliance</li>
+            <li>Healthcare team coordination</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Care Process -->
+  <section class="content-section">
+    <div class="container">
+      <div class="section-title">
+        <h2>Your Diabetic Foot Care Journey</h2>
+        <p>Comprehensive care process designed to provide optimal foot health management for diabetic patients</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-item">
+          <div class="feature-icon">
+            <i class="fas fa-clipboard-list"></i>
+          </div>
+          <h3>1. Initial Assessment</h3>
+          <p>Comprehensive evaluation of your current foot health status and diabetes management history.</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">
+            <i class="fas fa-route"></i>
+          </div>
+          <h3>2. Care Plan Development</h3>
+          <p>Personalized treatment and prevention plan tailored to your specific diabetes and foot health needs.</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">
+            <i class="fas fa-hands-helping"></i>
+          </div>
+          <h3>3. Ongoing Management</h3>
+          <p>Regular check-ups, preventive care, and immediate treatment of any foot issues that arise.</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <h3>4. Education & Support</h3>
+          <p>Continuous education and support to help you maintain optimal foot health independently.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Emergency Section -->
+  <section class="emergency" id="appointment">
+    <div class="container">
+      <h2>Protect Your Feet Today</h2>
+      <p>Don't wait for complications to develop. Schedule your diabetic foot care consultation and take control of your foot health.</p>
+      <a href="https://southtxrelay.github.io/stride-foot-ankle/" class="emergency-phone">
+        <i class="fas fa-shield-alt"></i> Start Care Plan
+      </a>
+      <p>Expert diabetic foot care and prevention services available now</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Diabetic Foot Specialists</h3>
+          <p>Comprehensive diabetic foot care services focused on prevention, early intervention, and optimal foot health management.</p>
+          <p><strong>Specialties:</strong> Diabetic Foot Screening, Wound Care, Neuropathy Management, Circulation Assessment, Prevention Education</p>
+        </div>
+        <div class="footer-section">
+          <h3>Care Services</h3>
+          <ul>
+            <li>Comprehensive Foot Screening</li>
+            <li>Diabetic Wound Care</li>
+            <li>Custom Diabetic Orthotics</li>
+            <li>Circulation Testing</li>
+            <li>Neuropathy Assessment</li>
+            <li>Patient Education Programs</li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Why Choose Us</h3>
+          <p><strong>Diabetes Specialists:</strong><br/>Expert diabetic foot care</p>
+          <p><strong>Prevention Focused:</strong><br/>Proactive care approach</p>
+          <p><strong>Comprehensive Care:</strong><br/>Complete health management</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Diabetic Foot Specialists. Comprehensive podiatry care for diabetic patients and foot health management.</p>
+      </div>
+    </div>
+  </footer>
+
+<!-- JSON-LD SCHEMA -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "diabetic-foot-care-services",
+  "name": "Diabetic Foot Care - Expert Podiatry Services & Prevention",
+  "description": "Comprehensive diabetic foot care services. Expert podiatrists provide preventive care, wound treatment, and foot health management for diabetic patients."
+}
+</script>
+</body>
+</html> 
